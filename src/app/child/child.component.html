@@ -1,0 +1,15 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr >
+      <th *ngFor="let item of head" scope="col">{{item.field}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let item of data">
+      <td *ngFor ="let element of head">
+       {{ item[element.field] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
